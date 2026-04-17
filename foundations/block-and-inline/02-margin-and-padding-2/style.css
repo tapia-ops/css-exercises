@@ -1,27 +1,47 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background: #eee;
   font-family: sans-serif;
+  flex-direction: column;
+/* Here i was trying to modify the body without checking that there is a div class "card" nesting all the elements  */
+  
 }
 
 .card {
-  width: 400px;
+  /* width: 400px; */
   background: #fff;
   margin: 16px auto;
+  width: auto; 
+  height: auto;
+  padding: 20px;
+  margin-left: 30px;
+  height: 1000px;
+  margin-right: 20px;
+ 
+  
 }
 
 .title {
   background: #e3f4ff;
+  padding: 20px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 30px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  justify-content: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display:  flex;
+  align-items: center;
 }
